@@ -11,3 +11,5 @@ console.log("Huhu")
 console.log("Huhu")
 console.log("Huhu")
 console.log("Huhu")
+
+console.warn("Way too many logs right there.")
