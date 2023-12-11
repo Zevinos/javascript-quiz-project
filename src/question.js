@@ -5,3 +5,9 @@ class Question {
 	// 2. shuffleChoices()
 }
 console.log("Huhu")
+console.log("Huhu")
+console.log("Huhu")
+console.log("Huhu")
+console.log("Huhu")
+console.log("Huhu")
+console.log("Huhu")
