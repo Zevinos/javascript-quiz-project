@@ -35,4 +35,17 @@ class Quiz {
       return true;
     } else return false;
   }
+  filterQuestionsByDifficulty(difficulty) {
+    const filteredQuestions = this.questions.filter((question) => {
+      return question.difficulty === difficulty;
+    });
+    return filteredQuestions;
+  }
+  averageDiffculty() {
+    const sumOfDiffulty = this.questions.reduce((acc, question) => {
+      return acc + question.difficulty;
+    }, 0);
+    const average = (sumOfDiffulty / this.questions.length).toFixed(2);
+    return Number(average);
+  }
 }
