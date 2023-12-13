@@ -16,3 +16,9 @@ class Question {
     }
   }
 }
+const question1 = new Question(
+  "text",
+  ["choice1", "choice2", "choice3"],
+  "answer",
+  5
+);

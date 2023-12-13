@@ -39,7 +39,7 @@ class Quiz {
     const filteredQuestions = this.questions.filter((question) => {
       return question.difficulty === difficulty;
     });
-    return filteredQuestions;
+    return filterQuestionsByDifficulty;
   }
   averageDiffculty() {
     const sumOfDiffulty = this.questions.reduce((acc, question) => {
@@ -49,3 +49,11 @@ class Quiz {
     return Number(average);
   }
 }
+const testQuestions = [
+  { text: "Question 1", choices: ["a", "b", "c"], answer: "a", difficulty: 1 },
+  { text: "Question 2", choices: ["d", "e", "f"], answer: "e", difficulty: 2 },
+  { text: "Question 3", choices: ["x", "y", "z"], answer: "z", difficulty: 2 },
+];
+
+const quiz1 = new Quiz(testQuestions, 60, 60);
+console.log(quiz1.averageDifficulty());
